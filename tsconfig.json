@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "include": [
+    "./src/",
+    "./storybook/",
+    "./stories/",
+    "./postcss.config.cjs",
+    "./tailwind.config.cjs",
+    "./tailwind-preset.cjs",
+    "./vite.config.ts",
+    "./vitest.config.cjs"
+  ],
+  "compilerOptions": {
+    // Allow JS files to be included in the project.
+    "allowJs": true,
+    // Enable modern JS features and DOM APIs.
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    // Output to the latest version of JS
+    "target": "ES2022",
+    // Enable top-level await, and other modern ESM features.
+    "module": "Node16",
+    "moduleResolution": "nodenext",
+    // Support React's JSX pragma.
+    "jsx": "react-jsx",
+    // We almost always want to use ESM.
+    "moduleDetection": "force",
+    // Emit build
+    "noEmit": false,
+    // Enable JSON imports.
+    "resolveJsonModule": true,
+    // Enable stricter transpilation for better output.
+    "isolatedModules": true,
+    // Output types
+    "declaration": true,
+    // Report an error when importing a file using a casing different from the casing on disk.
+    "forceConsistentCasingInFileNames": true,
+    // Properly support importing CJS modules in ESM
+    "esModuleInterop": true,
+    // Skip checking node_modules
+    "skipLibCheck": true,
+    // Enable strict type checking
+    "strict": true,
+    // Drop type imports from output
+    "verbatimModuleSyntax": true,
+    // Report errors for fallthrough cases in switch statements
+    "noFallthroughCasesInSwitch": true,
+    // Force functions designed to override their parent class to be specified as `override`.
+    "noImplicitOverride": true,
+    // Force functions to specify that they can return `undefined` if a possible code path does not return a value.
+    "noImplicitReturns": true,
+    // Report an error when a variable is declared but never used.
+    "noUnusedLocals": true,
+    // Report an error when a parameter is declared but never used.
+    "noUnusedParameters": true,
+    // Force the usage of the indexed syntax to access fields declared using an index signature.
+    "noUncheckedIndexedAccess": true,
+    // Report an error when the value `undefined` is given to an optional property that doesn't specify `undefined` as a valid value.
+    "exactOptionalPropertyTypes": true,
+    // Report an error for unreachable code instead of just a warning.
+    "allowUnreachableCode": false,
+    // Report an error for unused labels instead of just a warning.
+    "allowUnusedLabels": false
+  }
+}
