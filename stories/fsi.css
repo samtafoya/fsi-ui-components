@@ -1,0 +1,20 @@
+.ikf-li-bracket-steps {
+    font-size: 20px;
+    background-color: rgb(255, 196, 229);
+}
+
+.ikf-step-a {
+    color: #ff0000;
+}
+
+.ikf-step-b {
+    color:  #00ffdd;
+}
+
+.ikf-step-c {
+    color: #8800ff;
+}
+
+.ikf-step-n {
+    color: #ff00dd;
+}
